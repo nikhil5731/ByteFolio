@@ -4,10 +4,10 @@ import './About.css';
 
 const About = () => {
   const stats = [
-    { number: '7+', label: 'Years Experience', icon: <FaAward /> },
-    { number: '500+', label: 'Projects Completed', icon: <FaCode /> },
-    { number: '100+', label: 'Happy Clients', icon: <FaUsers /> },
-    { number: '50+', label: 'Awards Won', icon: <FaAward /> }
+    { number: '15 days', label: 'Average Delivery Time', icon: <FaAward /> },
+    { number: '50+', label: 'Projects Completed', icon: <FaCode /> },
+    { number: '20+', label: 'Happy Clients', icon: <FaUsers /> },
+    { number: '4.9/5', label: 'Average Ratings', icon: <FaAward /> }
   ];
 
   const values = [

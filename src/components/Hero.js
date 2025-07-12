@@ -33,16 +33,16 @@ const Hero = () => {
             </div>
             <div className="hero-stats animate-fadeInUp">
               <div className="stat">
-                <span className="stat-number">500+</span>
+                <span className="stat-number">50+</span>
                 <span className="stat-label">Projects Completed</span>
               </div>
               <div className="stat">
-                <span className="stat-number">100+</span>
+                <span className="stat-number">20+</span>
                 <span className="stat-label">Happy Clients</span>
               </div>
               <div className="stat">
                 <span className="stat-number">99%</span>
-                <span className="stat-label">Success Rate</span>
+                <span className="stat-label">Positive Feedback</span>
               </div>
             </div>
           </div>
