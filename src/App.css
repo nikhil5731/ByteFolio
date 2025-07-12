@@ -301,3 +301,10 @@ body.dark {
     font-size: 0.9rem;
   }
 } 
+
+
+.team-social {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}

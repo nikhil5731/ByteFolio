@@ -187,7 +187,7 @@
 
 .team-image {
   position: relative;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .team-image img {
@@ -205,16 +205,15 @@
 }
 
 .team-name {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 0.5rem;
 }
 
 .team-role {
   color: var(--primary-color);
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-size: 0.95rem;
 }
 

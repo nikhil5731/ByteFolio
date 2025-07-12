@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUsers, FaAward, FaCode, FaHandshake, FaLightbulb, FaRocket } from 'react-icons/fa';
+import { FaUsers, FaAward, FaCode, FaHandshake, FaLightbulb, FaRocket, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {
@@ -29,16 +29,23 @@ const About = () => {
   ];
 
   const teamMembers = [
-    {
-      name: 'Nikhil Kumar',
-      role: 'UI/UX Designer and Developer',
-      image: '/nikhil.jpeg'
-    },
+
     {
       name: 'Rishabh Jain',
       role: 'Lead Developer',
-      image: '/rishabh.png'
-    }
+      image: '/rishabh.png',
+      linkedin: 'https://www.linkedin.com/in/rishabh-jain2601/',
+      github: 'https://github.com/rishabhjain2601',
+      instagram: 'https://www.instagram.com/rishabhjain_11/'
+    },
+    {
+      name: 'Nikhil Kumar',
+      role: 'UI/UX Designer and Developer',
+      image: '/nikhil.jpeg',
+      linkedin: 'https://www.linkedin.com/in/nikhilkumar04/',
+      github: 'https://github.com/nikhil5731',
+      instagram: 'https://www.instagram.com/niikhiil48/'
+    },
   ];
 
   return (
@@ -101,7 +108,17 @@ const About = () => {
                 <div className="team-info">
                   <h4 className="team-name">{member.name}</h4>
                   <p className="team-role">{member.role}</p>
-                  <p className="team-bio">{member.bio}</p>
+                  <p className="team-social">
+                    <a href={member.linkedin} target="_blank" rel='noopener noreferrer'>
+                      <FaLinkedin size={25} color='#18cb96'/>
+                    </a>
+                    <a href={member.github} target="_blank" rel='noopener noreferrer'>
+                      <FaGithub size={25} color='#18cb96'/>
+                    </a>
+                    <a href={member.instagram} target="_blank" rel='noopener noreferrer'>
+                      <FaInstagram size={25} color='#18cb96'/>
+                    </a>
+                  </p>
                 </div>
               </div>
             ))}

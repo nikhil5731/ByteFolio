@@ -18,11 +18,10 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title animate-fadeInUp">
-              We Create <span className="highlight">Digital Excellence</span> That Drives Results
+              We Create <br /> <span className="highlight">Digital Excellence</span>
             </h1>
             <p className="hero-subtitle animate-fadeInUp">
-              Transform your business with cutting-edge web development, stunning design, 
-              and powerful digital solutions that captivate your audience and boost your growth.
+              Transform your business with cutting-edge web development, stunning design that captivate your audience and boost your growth.
             </p>
             <div className="hero-buttons animate-fadeInUp">
               <a href="#contact" className="btn btn-primary">
