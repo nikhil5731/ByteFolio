@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaQuoteLeft, FaStar, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaQuoteLeft, FaStar, FaChevronLeft, FaChevronRight, FaUserCircle } from 'react-icons/fa';
 import './Testimonials.css';
 
 const Testimonials = () => {
@@ -99,11 +99,7 @@ const Testimonials = () => {
                     <p className="testimonial-text">{testimonial.text}</p>
                     
                     <div className="testimonial-author">
-                      <img 
-                        src={testimonial.image} 
-                        alt={testimonial.name}
-                        className="author-image"
-                      />
+                      <FaUserCircle size={50}/>
                       <div className="author-info">
                         <h4 className="author-name">{testimonial.name}</h4>
                         <p className="author-role">{testimonial.role}</p>
