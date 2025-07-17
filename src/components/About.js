@@ -60,7 +60,7 @@ const About = () => {
           <div className="about-text">
             <h3 className="about-heading">Our Story</h3>
             <p className="about-description">
-              Founded in 2017, ByteFolio has been at the forefront of digital innovation, 
+              Founded in 2024, ByteFolio has been at the forefront of digital innovation, 
               helping businesses of all sizes achieve their online goals. We specialize in 
               creating custom web applications, mobile apps, and digital solutions that 
               drive growth and success.
