@@ -97,7 +97,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="about-team">
+        {/* <div className="about-team">
           <h3 className="team-title">Meet Our Team</h3>
           <div className="team-grid">
             {teamMembers.map((member, index) => (
@@ -123,7 +123,7 @@ const About = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -88,13 +88,13 @@ const Footer = ({ darkMode }) => {
                 <p className="footer-contact-item">
                   <strong>Email:</strong> <br /> bytefolio.tech@gmail.com
                 </p>
-                <p className="footer-contact-item">
+                {/* <p className="footer-contact-item">
                   <strong>Phone:</strong>
                   <br />
                   <span> +91 93114-50234 </span> 
                   <br />
                   <span> +91 98182-22557 </span>
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
