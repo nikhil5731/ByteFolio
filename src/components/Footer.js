@@ -108,8 +108,8 @@ const Footer = ({ darkMode }) => {
               © 2025 ByteFolio. Made with <FaHeart className="heart-icon" /> by ByteFolio Team
             </p>
             <div className="footer-legal">
-              <a href="#" className="footer-legal-link">Privacy Policy</a>
-              <a href="#" className="footer-legal-link">Terms of Service</a>
+              {/* <a href="#" className="footer-legal-link">Privacy Policy</a>
+              <a href="#" className="footer-legal-link">Terms of Service</a> */}
             </div>
           </div>
         </div>

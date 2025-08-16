@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUsers, FaAward, FaCode, FaHandshake, FaLightbulb, FaRocket, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import { FaUsers, FaAward, FaCode, FaHandshake, FaLightbulb, FaRocket } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {
@@ -28,25 +28,25 @@ const About = () => {
     }
   ];
 
-  const teamMembers = [
+  // const teamMembers = [
 
-    {
-      name: 'Rishabh Jain',
-      role: 'Lead Developer',
-      image: '/rishabh.png',
-      linkedin: 'https://www.linkedin.com/in/rishabh-jain2601/',
-      github: 'https://github.com/rishabhjain2601',
-      instagram: 'https://www.instagram.com/rishabhjain_11/'
-    },
-    {
-      name: 'Nikhil Kumar',
-      role: 'UI/UX Designer and Developer',
-      image: '/nikhil.jpeg',
-      linkedin: 'https://www.linkedin.com/in/nikhilkumar04/',
-      github: 'https://github.com/nikhil5731',
-      instagram: 'https://www.instagram.com/niikhiil48/'
-    },
-  ];
+  //   {
+  //     name: 'Rishabh Jain',
+  //     role: 'Lead Developer',
+  //     image: '/rishabh.png',
+  //     linkedin: 'https://www.linkedin.com/in/rishabh-jain2601/',
+  //     github: 'https://github.com/rishabhjain2601',
+  //     instagram: 'https://www.instagram.com/rishabhjain_11/'
+  //   },
+  //   {
+  //     name: 'Nikhil Kumar',
+  //     role: 'UI/UX Designer and Developer',
+  //     image: '/nikhil.jpeg',
+  //     linkedin: 'https://www.linkedin.com/in/nikhilkumar04/',
+  //     github: 'https://github.com/nikhil5731',
+  //     instagram: 'https://www.instagram.com/niikhiil48/'
+  //   },
+  // ];
 
   return (
     <section id="about" className="about section">
