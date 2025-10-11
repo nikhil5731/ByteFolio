@@ -1,9 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import './Portfolio.css';
 import { projects } from '../portfolio';
 
 const Portfolio = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const cardsPerPage = 4;
+
+  // Calculate pagination values
+  const totalPages = Math.ceil(projects.length / cardsPerPage);
+  const indexOfLastCard = currentPage * cardsPerPage;
+  const indexOfFirstCard = indexOfLastCard - cardsPerPage;
+  const currentProjects = projects.slice(indexOfFirstCard, indexOfLastCard);
+
+  // Handle page change
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    // Scroll to portfolio section
+    document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handlePrevious = () => {
+    if (currentPage > 1) {
+      handlePageChange(currentPage - 1);
+    }
+  };
+
+  const handleNext = () => {
+    if (currentPage < totalPages) {
+      handlePageChange(currentPage + 1);
+    }
+  };
 
   return (
     <section id="portfolio" className="portfolio section">
@@ -13,7 +40,7 @@ const Portfolio = () => {
         {/* Content Area */}
         <div className="portfolio-content-area">
           <div className="portfolio-grid">
-              {projects.map((project, index) => (
+              {currentProjects.map((project, index) => (
                 <div key={index} className="portfolio-card card animate-fadeInUp">
                   <div className="portfolio-image">
                     <img src={project.image || 'https://via.placeholder.com/400x300?text=Project'} alt={project.title} />
@@ -49,6 +76,39 @@ const Portfolio = () => {
                 </div>
               ))}
           </div>
+
+          {/* Pagination Controls */}
+          {totalPages > 1 && (
+            <div className="pagination">
+              <button 
+                className="pagination-btn" 
+                onClick={handlePrevious}
+                disabled={currentPage === 1}
+              >
+                Previous
+              </button>
+              
+              <div className="pagination-numbers">
+                {[...Array(totalPages)].map((_, index) => (
+                  <button
+                    key={index + 1}
+                    className={`pagination-number ${currentPage === index + 1 ? 'active' : ''}`}
+                    onClick={() => handlePageChange(index + 1)}
+                  >
+                    {index + 1}
+                  </button>
+                ))}
+              </div>
+
+              <button 
+                className="pagination-btn" 
+                onClick={handleNext}
+                disabled={currentPage === totalPages}
+              >
+                Next
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </section>
