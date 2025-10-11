@@ -13,14 +13,14 @@ const Portfolio = () => {
         {/* Content Area */}
         <div className="portfolio-content-area">
           <div className="portfolio-grid">
-              {projects.map(project => (
-                <div key={project.id} className="portfolio-card card animate-fadeInUp">
+              {projects.map((project, index) => (
+                <div key={index} className="portfolio-card card animate-fadeInUp">
                   <div className="portfolio-image">
                     <img src={project.image || 'https://via.placeholder.com/400x300?text=Project'} alt={project.title} />
                     <div className="portfolio-overlay">
                       <div className="portfolio-actions">
                         {project.liveUrl && (
-                          <a href={project.liveUrl} className="portfolio-link" title="View Live" target="_blank" rel="noopener noreferrer">
+                          <a href={project.liveUrl} className="portfolio-link github-link" title="View Live" target="_blank" rel="noopener noreferrer">
                             <FaExternalLinkAlt />
                             <span className="link-text">View Live</span>
                           </a>
