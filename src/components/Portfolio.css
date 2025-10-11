@@ -652,6 +652,10 @@
   .link-text {
     font-size: 0.85rem;
   }
+
+  .pagination-btn {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -737,8 +741,7 @@
   }
 
   .pagination-btn {
-    padding: 0.7rem 1.2rem;
-    font-size: 0.85rem;
+    display: none;
   }
 
   .pagination-number {
