@@ -96,12 +96,6 @@ export const projects = [
       "liveUrl": "https://www.daudedilli.com/"
     },
     {
-      "title": "Indian Recruitment Services",
-      "image": "/irs.png",
-      "description": "At Indian Recruitment Services, we understand that finding the perfect talent for your organization is more than just a recruitment process, it's about securing the future success of your business. As a leading recruitment consultancy in India, we specialize in providing tailored solutions to meet your unique staffing needs.",
-      "liveUrl": "https://indianrecruitmentservices.com"
-    },
-    {
       "title": "Eventus",
       "image": "/eventus.png",
       "description": "Eventus is a subsidiary of Business Bulls DTU which helps to digitalise the hassling process of booking college events and joining college societies.",
