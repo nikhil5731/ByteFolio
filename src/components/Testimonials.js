@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { FaQuoteLeft, FaStar, FaChevronLeft, FaChevronRight, FaUserCircle } from 'react-icons/fa';
 import './Testimonials.css';
 
