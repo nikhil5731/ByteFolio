@@ -22,7 +22,7 @@ const Contact = () => {
   };
 
   const validateContactForm = (values) => {
-    const errors = {};
+    // const errors = {};
   
     // Name
     if (!values.name || values.name.trim().length < 2) {
